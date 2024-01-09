@@ -54,6 +54,12 @@
     .linkvideo{
         margin-left: 15%;}
 
+        .link{
+            margin-top: 5%;
+            margin-left: 15%;
+            width: 250px;
+            height: 50px;}
+
         .link1{
             position: absolute;
             top: 45%;
@@ -169,8 +175,8 @@ a img{
     main{
         margin: 2%;
         }
-    .left{
-    margin-left: 0%;
+    p{
+    margin-left: 5%;
 }}
 /*Media queries*/
 
