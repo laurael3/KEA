@@ -1,0 +1,130 @@
+/* Generel styling */
+
+
+:root {
+    --clr-dark: rgba(28, 26, 26, 1);
+    --clr-darker:rgba(28, 26, 26, 1);
+    --clr-light: #fff;
+    --clr-light-toned: #abe;
+    --clr-accent: #f00;
+}
+
+
+.logo{background-image: url("imgs/Hue.png");
+    background-size: cover;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    /* Layout af body, der sikrer footer i bunden ved manglende indhold i main */
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100dvh;
+}
+
+header,
+footer {
+    background-color: rgba(28, 26, 26, 1);
+    color: var(--clr-light);
+}
+
+.logo {
+    font-size: 24px;
+}
+
+footer {
+    text-align: center;
+}
+
+/* GLOBAL MENU */
+
+/* STANDARD MENULINJE */
+
+header nav {
+    /* Flexbox items er div med logo, button (skjult) og ul menu */
+    background-color: rgba(28, 26, 26, 1);
+    color: var(--clr-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;}
+
+header nav li {
+    font-family: 'Lexend';}
+
+header nav {
+    font-family: 'Copperplate';}
+    
+
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+    margin-left: 100px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--clr-light);
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: var(--clr-light-toned);
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Skjul checkboksen ved større visninger */
+@media screen and (min-width: 600px) {
+    input[type="checkbox"] {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        background-color: rgba(28, 26, 26, 1);
+        z-index: 1;
+        /* z-index sørger for at menulisten altid er ovenpå andet indhold */
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    .menu li {
+        margin: 0;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    input[type="checkbox"]:checked+.menu-icon+.menu {
+        display: flex;
+    }
+}

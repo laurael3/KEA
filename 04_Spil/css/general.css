@@ -1,0 +1,142 @@
+/*Fonts*/
+@font-face {
+    font-family: 'Abel';
+    src: url(../fonts/Abel/abel-regular-webfont.woff2);
+}
+
+@font-face {
+    font-family: 'Lexend';
+    src: url(../fonts/Lexend/lexend-variablefont_wght-webfont.woff2);
+}
+
+
+@font-face {
+    font-family: 'Showcard';
+    src: url(../fonts/Showcard/showg-webfont.woff2);
+}
+/*Fonts*/
+
+p{font-family:'Abel';
+    font-size: 20px;
+margin-right: 50px;}
+
+h2{font-family:'Lexend';
+    font-size: 20px;}
+
+/*Nav*/
+header{
+    background-color: rgb(156, 178, 131);
+    padding: 25px;
+    font-family:'Showcard';}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+   text-align: center;}
+
+   @media (min-width: 400px){
+    nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content:space-around;
+    }
+    
+    nav li{
+        display: inline-block;
+        margin-left: 0.1px;
+        }
+    }
+
+/*Nav*/
+
+/*Links*/
+a:link {
+    color: white;
+    text-decoration: none;
+}
+a:visited {
+    color: rgb(117, 116, 116);
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(228, 228, 228);
+    text-decoration: none;
+}
+/*Links*/
+
+/* Hjemmeside look */
+h1{font-family:'Showcard';
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    word-wrap: break-word;
+    text-align: center;}
+
+
+body {background-color: rgb(235, 255, 212);
+}
+
+
+
+footer{
+    margin-top: 30px;
+    text-align: center;}
+
+/* Hjemmeside look */
+
+
+@media (min-width: 400px){
+    #grid_1-1{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);}
+    
+    #grid_2-1{
+        display: grid;
+        grid-template-columns: 2fr 1fr;}
+
+    #PapirProto{
+        display: grid;
+        grid-column: 2;}
+        
+    #grid_1-1-1{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);}
+
+    #assets, #grafik, #spil, #teknik{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    #margin1{
+        margin-left: 6vw;
+        margin-top: -20px;}
+
+    #forsidetekst {
+        margin-left: 200px;
+        margin-right: 200px;}
+        
+    #forsidetekst p{
+        margin-top: -10px;}
+    }
+
+@media (max-width: 400px){
+    #grafik img, #teknik img, #assets img{
+        max-width: 300px;}
+    #assets{
+        max-width: 300px;
+        align-items: center;}
+        
+    h1{
+        font-size: 25px;}
+        
+    } 
+
+#forsidebillede{
+    position: relative;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    margin: 0;}

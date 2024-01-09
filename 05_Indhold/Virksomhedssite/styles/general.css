@@ -1,0 +1,181 @@
+
+body{
+  background-color: #C5B08A;
+  background-image: url(/imgs/BG/paper.png);
+}
+
+
+/* Fontface */
+@font-face {
+  font-family: "Typewriter";
+  src: url(../fonts/JMH\ Typewriter-Thin.woff2);
+}
+
+@font-face {
+  font-family: "Bearer";
+  src: url(../fonts/Light\ Bearer.woff2);
+}
+/* Fontface */
+
+
+/* Tekst styling */
+@media screen and (max-width:480px) {
+  h1{
+    font-family: "Bearer";
+    color: #374824;
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-family: "Bearer";
+    color: #374824;
+    font-size: 1.3rem;
+  }
+  
+  p {
+    font-family: "Typewriter";
+    font-size: 1rem;
+  }
+  }
+
+h1{
+  font-family: "Bearer";
+  color: #374824;
+  font-size: 4.5rem;
+}
+
+h2 {
+  font-family: "Typewriter";
+  color: #374824;
+  font-size: 2.5rem;
+}
+
+h3{
+  font-family: "Typewriter";
+  color: #374824;
+}
+
+p {
+  font-family: "Typewriter";
+  
+}
+
+/* Tekst styling */
+
+/* Links */
+.menu a:link {
+  color: #374824;
+}
+
+.menu a:visited {
+  color: #374824;
+}
+
+.menu a:hover {
+  color: #bb3a30;
+}
+
+.menu a:active {
+  color: #bb3a30;
+}
+/* Links */
+
+/* Footer */
+footer {
+  margin-top: 5%;
+  color: #374824;
+  text-align: center;
+}
+/* Footer */
+
+/* Header*/
+header nav {
+  color: #374824;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+  padding-top: 20px;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu li {
+  margin-right: 7rem;
+  margin-left: 6rem;
+}
+
+.menu a {
+  z-index: 10;
+  text-decoration: none;
+  color: #374824;
+  font-family: "Typewriter";
+}
+
+/* Header*/
+
+/* Logo*/
+.logo img{
+  margin-left: 20%;
+  width: 50%;
+}
+/* Logo*/
+
+/* Burger menu */
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  #hjemknap{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    background-color: #dfcba6;
+    z-index: 1;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .menu li {
+    margin: 0;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  input[type="checkbox"]:checked + .menu-icon + .menu {
+    display: flex;
+  }
+}
+/* Burger menu */

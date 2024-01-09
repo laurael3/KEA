@@ -1,0 +1,212 @@
+/*Font face*/
+@font-face {
+    font-family: 'Abel';
+    src: url(../Fonts/Abel/abel-regular-webfont.woff2);
+}
+
+@font-face {
+    font-family: 'Lexend';
+    src: url(../Fonts/Lexend/lexend-variablefont_wght-webfont.woff2);
+}
+
+@font-face {
+    font-family: 'League';
+    src: url(../Fonts/League/leaguespartan-bold-webfont.woff2);
+}
+/*Font face*/
+
+/*Text*/
+h1{font-family:'League', Arial, Helvetica, sans-serif;
+text-align: center;
+font-size: 1.5rem;
+line-height: 1.5;
+word-wrap: break-word;
+color:  #202124;}
+
+h2,h3{font-family:'Lexend', Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1.3rem;
+    color:  #202124;}
+
+p{ 
+    font-family:'Abel', Arial, Helvetica, sans-serif;
+    color: #202124;
+    font-size: 1.3rem;
+    line-height: 1.5;}
+/*Text*/
+
+/*Body*/
+main a{color: #202124;}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;}
+
+img{
+    max-width: 100%;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.25);}
+
+/*Body*/
+
+
+/*Links*/
+a:link {
+    color: #202124;
+    text-decoration: none;
+}
+a:visited {
+    color: #202124;
+    text-decoration: none;
+}
+a:hover {
+    color: #202124;
+    text-decoration: none;
+}
+/*Links*/
+
+
+/*Footer*/
+footer{
+    position: relative;
+    margin-top: 90px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    z-index: 2;
+    background-color: #202124;
+    color: #f2f2f2;}
+
+footer p{
+    color: #f2f2f2;}   
+
+/*Footer*/
+
+
+/*Header*/
+header{
+    background-color: rgb(28, 26, 26);
+    padding: 25px;}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+   text-align: center;}
+
+@media (min-width: 400px){
+nav ul{
+margin: 0;
+padding: 0;
+list-style: none;
+display: flex;
+justify-content:space-around;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 0.1px;
+    }
+}
+/*Header*/
+
+
+
+/* Nav */
+
+ .logo a{
+    font-family: 'League';
+    font-size: 24px;
+    color: white;
+}
+
+header nav {
+    background-color: rgba(28, 26, 26, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;}
+
+header nav li {
+    font-family: 'Lexend';}
+
+header nav {
+    font-family: 'Copperplate';}
+    
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+    margin-left: 100px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu a:hover {
+    color: gray;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Gemmer burgermenu ved stor skærm */
+@media screen and (min-width: 600px) {
+    input[type="checkbox"] {
+        display: none;
+    }
+}
+/* Gemmer burgermenu ved stor skærm */
+
+
+/* Viser burgermenu ved lille skærm */
+@media screen and (max-width: 599px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        background-color: rgba(28, 26, 26, 1);
+        z-index: 1;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    .menu li {
+        margin: 0;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    input[type="checkbox"]:checked+.menu-icon+.menu {
+        display: flex;
+    }
+}
+/* Viser burgermenu ved lille skærm */
+
+ /* Nav */

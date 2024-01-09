@@ -1,0 +1,240 @@
+h3{color: #bb3a30;}
+
+p {color: #374824;}
+
+#underoverskift{
+    margin-left: 10%;
+    margin-top: -5%;
+  }
+
+body{
+    background-image: url(/imgs/BG/paper.svg);
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+}
+
+#grid1_8_1{
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    }
+  
+  #menu{
+    grid-column: 2/3;;
+  }
+
+#beer_drawing{
+    position: fixed;
+    top: 100px;
+    right: -7px;
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+/* illustrationer - cirklerne */
+
+#CirkelRødLil {
+    position: absolute;
+    top: 34%;
+    left: -200px; /* Adjust the left value based on your design */
+    width: 23%;
+    height: auto;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 499px) {     
+#bird-circle{
+    position: absolute;
+    top: 10%; 
+    left: 65%;
+    width: 24%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+#tegning{
+    display: none;
+}
+
+#rødcirkel{
+    display: none;
+}
+
+#fuglmedøl{
+    display: none;
+}
+
+
+
+} 
+
+/* Grids og Flexbox */
+.menutop-grid1-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    row-gap: 0px;
+}
+
+.menu-grid1-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    row-gap: 0px;
+    margin-bottom: 0;
+}
+
+
+.menutop-grid1-1 h2{
+    grid-column: -1/-3;
+    grid-row: 2;
+}
+
+.flexbox-beer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;   
+    border-top: 2px solid #bb3a30; /* Top border color */ 
+    grid-column: 1;
+    grid-row: 1/2;
+    margin-bottom: 0;
+}
+
+.flexbox-alchohol {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+     border-top: 2px solid #bb3a30; /* Top border color */ 
+}
+
+#flexbox-drinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 2px solid #bb3a30; /* Top border color */
+}
+
+#flexbox-shots{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 2px solid #bb3a30;
+}
+
+#flexbox-other{
+     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 2px solid #bb3a30;
+}
+
+#flexbox-soda{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 2px solid #bb3a30;
+
+}
+
+/* Articles placering via. grid-row */
+
+#drinks{
+    grid-row: 2;
+}
+#alcohol{
+    grid-row: 1/4;
+    grid-column: -1/-2;
+}
+
+#shots{
+    grid-row: 4;
+    grid-column: 1/2;
+}
+
+#other{
+    grid-column: -1/-2;
+    grid-row: 3/5;
+}
+
+#soda{
+    grid-row: 3/4;
+}
+
+#prices{
+text-align: right;}
+
+/* Responsivt design */
+
+@media screen and (max-width: 499px) {
+
+    p {
+        font-size: small !important;
+    }
+
+    .menu-grid1-1 {
+        display: block; /* Reset to block or another appropriate display value */
+        grid-template-columns: initial; /* Reset grid-template-columns to its initial value */
+        gap: initial; /* Reset gap to its initial value */
+        row-gap: initial; /* Reset row-gap to its initial value */
+        margin-bottom: 0; /* Reset other properties if needed */
+    }
+    #bird-circle{
+    position: absolute;
+    top: 24%; /* Adjust the left value based on your design */
+    left: 55%;
+    width: 32%;
+    height: auto;
+    object-fit: cover;
+    }
+    .menutop-grid1-1 h1{
+        grid-column: -1/-3;
+        font-size: xx-large;
+    }
+    .menutop-grid1-1 h2{
+        font-size:x-large;
+    }
+}
+
+@media screen and (max-width: 499px) {
+      #beer_drawing {
+        position: fixed !important;
+        display: none !important;
+    }
+
+
+    #menu #bird-circle{
+        position: absolute;
+        top: 30%; 
+        left: 60%;
+        display: none;
+    }  
+
+    #tegning{
+        position: absolute;
+        top: 155%;
+        left: 45%;
+
+    }
+    
+    #rødcirkel{
+        position: absolute;
+        top: 20%; 
+        left: 60%;
+        z-index: -1;
+        overflow-x: hidden;
+    }
+
+    #fuglmedøl{
+        position: absolute;
+        top: 28%; 
+        left: 70%;
+        overflow-x: hidden;
+    }
+  
+        
+    }

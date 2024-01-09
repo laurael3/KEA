@@ -1,0 +1,346 @@
+/* game */
+#screen{
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+#game{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#game_background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../imgs/baggrund.svg);
+  background-size: 100%;
+}
+
+#game_elements{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+/* game */
+
+/* animals */
+
+#crab_container{
+  position: absolute;
+  width: 17%;
+  aspect-ratio: 775/475;
+  top: 40%;
+  left: 100%;
+  z-index: 1;
+}
+
+#crab_sprite{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../imgs/figur/krabbe.svg);
+  background-size: cover;
+}
+
+
+#croc_container{
+  position: absolute;
+  width: 60%;
+  aspect-ratio: 1655/350;
+  top: 70%;
+  left: 70%;
+  z-index: 1;
+}
+
+#croc_sprite{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../imgs/figur/krokodille.svg);
+  background-size: cover;
+}
+
+#turtle_container{
+  position: absolute;
+  width: 17%;
+  aspect-ratio: 775/475;
+}
+
+#turtle_sprite{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../imgs/figur/skildpadde.svg);
+  background-size: cover;
+}
+
+#snake_container{
+  position: absolute;
+  width: 10%;
+  aspect-ratio: 610/590;
+}
+
+#snake_sprite{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../imgs/figur/slange.svg);
+  background-size: cover;
+}
+
+#spider_container{
+  position: absolute;
+  width: 17%;
+  aspect-ratio: 945/485;
+}
+
+#spider_sprite{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../imgs/figur/edderkop.svg);
+  background-size: cover;
+}
+/* animals */
+
+
+/* nature */
+#middelground{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../imgs/middleground.svg);
+  background-size: 100%;
+  pointer-events: none;
+}
+
+#foreground{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../imgs/foreground.svg);
+  background-size: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+/* nature */
+
+
+/* screens */
+#start{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  
+}
+
+#startscreen{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../imgs/titelskræm.svg);
+  background-size: 100%;
+}
+
+#gameover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../imgs/gameover.svg);
+  background-size: 100%;
+}
+
+#infoscreen{
+  position: absolute;
+  top: 0;
+  left: -1%;
+  width: 110%;
+  height: 110%;
+  background-image: url(../imgs/infoskærmv3.svg);
+  background-size: 100%;
+}
+/* screens */
+
+
+/* buttons */
+
+#info_btn{
+  position: absolute;
+  top: 3%;
+  left: 90%;
+  width: 8%;
+  height: 14%;
+  max-width: 100%;
+  background-image: url(../imgs/infobutton.svg);
+  background-size: 100%;
+}
+
+#exit1{
+  position: absolute;
+  top: 3%;
+  left: 83%;
+  width: 8%;
+  height: 14%;
+  max-width: 50%;
+  background-image: url(../imgs/exitbutton.svg);
+  background-size: 100%;
+}
+
+#start_btn{
+  position: absolute;
+  top: 55%;
+  left: 35%;
+  aspect-ratio: 645/190;
+  width: 35%;
+  background-image: url(../imgs/start.svg);
+  background-size: 100%;
+  background-size: cover;
+}
+
+#tryagain_btn{
+  position: absolute;
+  top: 53%;
+  left: 30%;
+  aspect-ratio: 890/225;
+  width: 45%;
+  background-image: url(../imgs/tryagain.svg);
+  background-size: 100%;
+  background-size: cover;
+}
+
+#tryagain_btn2{
+  position: absolute;
+  top: 53%;
+  left: 30%;
+  aspect-ratio: 890/225;
+  width: 45%;
+  background-image: url(../imgs/tryagain.svg);
+  background-size: 100%;
+  background-size: cover;
+}
+
+
+/* buttons */
+
+
+#level_complete{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../imgs/victoryskærm.svg);
+  background-size: 100%;
+}
+
+
+/* game ui */
+#score_container{
+  position: absolute;
+  top: 78%;
+  left: 2%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+#score{
+  font-family:'Showcard';
+  font-size: 7vw;
+  color: rgb(235, 255, 212);
+  pointer-events: none;
+  z-index: 2;
+}
+
+#heart_container1{
+  position: absolute;
+  top: 5%;
+  left: 95%;
+  width: 5%;
+  height: 7%;
+  background-image: url(../imgs/liv3.svg);
+  background-size: 100%;
+  pointer-events: none;
+}
+
+#heart_container2{
+  position: absolute;
+  top: 5%;
+  left: 90%;
+  width: 5%;
+  height: 7%;
+  background-image: url(../imgs/liv3.svg);
+  background-size: 100%;
+  pointer-events: none;
+}
+
+#heart_container3{
+  position: absolute;
+  top: 5%;
+  left: 85%;
+  width: 5%;
+  height: 7%;
+  background-image: url(../imgs/liv3.svg);
+  background-size: 100%;
+  pointer-events: none;
+}
+
+
+#heart{
+  font-family:'Showcard';
+  font-size: 5vw;
+  color: rgb(235, 255, 212);
+  text-align: center;
+  pointer-events: none;
+}
+
+#game_ui {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  pointer-events: none;
+}
+
+#time_container {
+  position: absolute;
+  width: 3%;
+  height: 40%;
+  aspect-ratio: 6/30;
+  background-color:  rgb(235, 255, 212);
+  top: 10%;
+  left: 1.5%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+#time_sprite {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(235, 255, 212);
+  transform-origin: 50% 100%;
+  pointer-events: none;
+}
+/* game ui */
+
+
+

@@ -1,0 +1,282 @@
+ /* Links styling*/
+ .link,  .link1,  .link2,  .linkvideo{
+    background: linear-gradient(145deg, #dadada, #ffffff);
+    box-shadow:  11px 11px 25px #8c8c8c,
+             -11px -11px 25px #ffffff;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lexend';
+    color: #202124;
+   }
+/* Links styling*/
+ 
+
+
+/* Links Desktop view*/
+@media (min-width: 400px){
+
+    .link,  .link1,  .link2,  .linkvideo{
+        width: 240px;
+        height: 60px;
+        margin-bottom: 10px;
+        font-size: 1rem;
+       }
+
+       .link{
+        margin-top: 5%;
+      margin-left: 38%;
+       }
+
+       .link1,  .link2{
+        position: absolute;
+        top: 80%;
+        margin-left: 10%; 
+       }
+
+       .linkvideo{
+        margin-left: 25%;
+       }
+
+       .grid_3-3-3  .link{
+        margin-left: 20%;   
+       }
+
+     
+    }
+/* Links Desktop view*/
+
+
+
+/* Links Mobil view*/
+@media (max-width: 400px){
+    .linkvideo{
+        margin-left: 15%;}
+
+        .link1{
+            position: absolute;
+            top: 45%;
+            width: 150px;
+            height: 50px;
+            margin-left: 30%;}
+
+        .link2{
+           position: absolute;
+            top: 60%;
+            width: 150px;
+            height: 50px;
+            margin-left: 30%;
+           }
+       
+        }
+/* Links Mobil view*/
+
+
+
+
+/* CV Underside*/
+#cv{
+    margin-top: 0%;
+    display: grid;
+    grid-template-columns:8fr;
+    grid-column: 2;
+    max-width: 800px;}
+
+#cv p{
+   font-size: 1rem;
+   line-height: 0.8;
+}
+
+#cv h3{
+    text-align: left;
+    line-height: 0.8;
+   }
+
+#mid{
+    text-align: center;
+   }
+/* CV Underside*/
+
+
+/*Portfolio underside*/
+#portfolio img{
+    max-width: 100%;
+    margin: 2%;
+    border-radius: 5%;
+  }
+
+#portfolio p{
+   padding-right: 20px;
+   padding-left: 20px;
+}
+
+
+ #portfolio .grid_4-4 a{
+    margin: 3%;
+ }
+/*Portfolio underside*/
+
+
+
+/*Undersider*/
+a img{
+    box-shadow: none;
+}
+
+#order{
+    order: -1;}
+
+
+
+
+#tema3 img, #tema4 img, #tema5 img{
+    margin: 2%;
+}
+
+@media (min-width: 400px){
+#mobilbillede1{
+    max-width: 70%;
+    margin-left: 10%;}
+
+#mobilbillede2{
+    max-width: 90%;
+    margin-left: 10%;}
+
+#mobilbillede3{
+        max-width: 80%;
+        margin-left: 10%;}
+
+.midt{
+   margin-top: 10%;
+}
+
+.left{
+    margin-left: 5%;
+}
+}
+/*Undersider*/
+
+
+
+
+
+/*Media queries*/
+@media (max-width: 400px){
+    img{
+        margin-right: 2%;
+        }
+    main{
+        margin: 2%;
+        }
+    .left{
+    margin-left: 0%;
+}}
+/*Media queries*/
+
+    
+
+/*Pilene på undersiderne*/
+@media (max-width: 400px){ 
+    #arrowback{
+        display: none;
+        }
+
+    #arrownext{
+        display: none;
+        }
+    }
+
+#arrowback{
+    filter: drop-shadow(11px 11px 25px #8c8c8c);
+    rotate: 180deg;
+    box-shadow: none;
+    position: absolute;
+    max-width: 8%;
+    top: 8%;
+    left: 0%;
+}
+
+#arrownext{
+    filter: drop-shadow(11px 11px 25px #8c8c8c);
+    box-shadow: none;
+    position: absolute;
+    max-width: 8%;
+    top: 8%;
+    left: 92%;
+}
+/*Pilene på undersiderne*/
+
+
+
+
+/*grids*/ 
+@media (min-width: 400px){
+.grid_2-8-2{
+    display: grid;
+    grid-template-columns:2fr 8fr 2fr;}
+
+.grid_4-4{
+    display: grid;
+    grid-template-columns:4fr 4fr;
+    grid-column: 2;}
+    
+
+.grid_8{
+    display: grid;
+    grid-template-columns:8fr;
+    grid-column: 2;}
+
+.grid_3-3-3{
+    display: grid;
+    grid-template-columns:3fr 3fr 3fr;
+    grid-column: 2;}
+    
+}
+/*grids*/
+
+
+
+
+
+/* Portfolio hover effekt med tekst*/
+#portfolio a:hover img {
+    filter: grayscale(0%);
+}
+
+
+#portfolio img{
+    filter: grayscale(100%);
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.25);
+}
+
+#portfolio .image-container{ 
+  display: flex;
+}
+
+/* Tekst bliver på billedet*/
+#portfolio .image-link {
+  position: relative;
+  margin: 10px;
+  text-decoration: none;
+}
+
+#portfolio .hover-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  color: #202124;
+  font-family: 'League';
+  font-size: 2rem;
+}
+
+#portfolio .image-link:hover .hover-text {
+  opacity: 1;
+}
+
+/* Portfolio hover effekt med teskt*/
+
+
+

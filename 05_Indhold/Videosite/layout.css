@@ -1,0 +1,120 @@
+  /* Layout */
+@media (min-width: 600px) {
+
+.bannertekst {
+  font-size: 2rem;
+}
+  
+.layoutimg {
+  max-width: 95%;
+}
+
+#grid-1-1{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+}
+/* Layout */
+
+/* Desktop menu */
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #9CD9BC;
+  padding: 1.5rem;
+}
+  
+.logo a {
+  font-family: "Kalam", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 1.8rem;
+}
+  
+header nav ul {
+  display: flex;
+  gap: 45px;
+  list-style: none;
+  margin-right: 10px;
+}
+  
+a {
+  text-decoration: none;
+  font-family: "Kalam" , sans-serif;
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
+}
+/* Desktop menu */
+
+/* Mobil menu */
+@media (max-width: 400px) {
+.bannertekst {
+  font-size: 12px;
+  }
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #9CD9BC;
+  padding: 0.5rem;
+}
+
+.logo a {
+  font-family: "Kalam", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+}
+
+header nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Kalam", sans-serif;
+  font-size: 0.8rem;
+  color: rgb(255, 255, 255);
+}
+}
+/* Mobil menu */
+
+/* Galleri */
+@media (min-width: 600px) {
+.galleri {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.billede1 {
+  display: grid;
+  grid-column: 3 / span 2;
+  grid-row: 1 / span 2;
+}
+
+.billede3 {
+  display: grid;
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+}
+
+.billede4 {
+  display: grid;
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+}
+
+.billede2 {
+  display: grid;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 1;
+}
+}
+/* Galleri */

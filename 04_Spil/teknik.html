@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="icon" type="image/x-icon" href="imgs/favicon.png" />
+    <title>Teknik</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Hjem</a></li>
+          <li><a href="spil.html">Spil</a></li>
+          <li><a href="grafik.html">Grafik</a></li>
+          <li><a href="assets.html">Assets</a></li>
+          <li><a href="teknik.html">Teknik</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="teknik">
+      <h1>Teknik</h1>
+      <section id="grid_1-1">
+        <div>
+          <h2>Aktivitets-diagram</h2>
+          <img
+            src="imgs/screenshots/AktivitetsLaura.png"
+            alt="Aktivitetsdiagram"
+            width="550"
+          />
+        </div>
+        <div>
+          <h2>State Machine-diagram</h2>
+          <img
+            src="imgs/screenshots/SmdLaura.png"
+            alt="StateMachinediagram"
+            width="620"
+          />
+        </div>
+        <div>
+          <h2>Aktivitetsdiagram beskrivelse</h2>
+          <p>
+            Der er to “gode” elementer hvor én lyd spiller når man klikker dem
+            og hvor man får henholdsvis 1 og 2 point. Der er én dårlig hvor man
+            mister ét liv hvis man klikker på den, samt der bliver spillet en
+            anden lyd. Og som tilføjelse er der et ekstra dårligt element der
+            kun kommer én gang hvor man også mister liv. Og der kommer en
+            forhinding forbi skærmen, man ikke kan klikke på, men blot er i
+            vejen og distraherende.
+          </p>
+          <p>
+            Hvordan bevæger tingene sig? Scale in/hopper op/og transform
+            (forskelligt for dyrene) når de dukker op, zoom ud og forsvinde når
+            man ikke når at klikke og snurre rundt og ud når man rammer dem.
+          </p>
+          <p>
+            Hvordan du vil vise tid, point og liv? Klassiske konventioner. 3
+            hjerter for liv, et tal i bunden for point, og en søjle hvor tiden
+            bliver vist med ændring af farven.
+          </p>
+          <p>
+            Hvordan taber og vinder man spillet (hvor mange point/liv)? Man
+            vinder ved at score over 20 point på den tid man har (30 sek). Man
+            taber ved at miste alle sine liv (3) eller løbe tør for tid uden at
+            have scoret 20 point.
+          </p>
+        </div>
+        <div>
+          <h2>State Machine diagram beskrivelse</h2>
+          <p>
+            Her har jeg mit State Machine Diagram som er taget ud fra Diagram 1
+            med gode ting, og dårlige ting.
+          </p>
+          <p>
+            Jeg tilføjede senere nogle forstyrrende elementer som en krokodille,
+            og en krabbe. Krabben hopper rundt, og rammer man den mister man ét
+            liv. Den har sin egen funktion "clickCrab" der er næsten identisk
+            med "clickTurtle" men uden en reset funktion da den kun dukker op én
+            gang i spillet. Krokodillen kravler bare ind over skærmen og er i
+            vejen så den er kun med i min StartGame og EndGame funktion.
+          </p>
+          <p>
+            For at jeg kunne lave en info knap i øverste højre hjørne fandt jeg
+            mig frem til at jeg skulle bruge to ekstra funktioner - I hvert fald
+            sådan jeg løste mit problem på. Der er nok en smartere løsning. Men
+            jeg lavede en `clickStart` funktion som vist på State Machine
+            diagrammet, og i den funktion kan man klikke på en infoknap der
+            fører en til `infoScreen` funktionen, som viser min infoskærm, samt
+            har en exitknap der så fører til en ny funktion, funktion
+            `backToStart` som fører en tilbage til `clickStart` funktionen. Da
+            det ikke virkede for mig på en anden måde.
+          </p>
+        </div>
+      </section>
+      <section id="grid_1-1-1">
+        <div><img src="imgs/screenshots/const.png" alt="" width="500" /></div>
+        <div id="margin1">
+          <p>
+            I alt endte jeg med at have 15 funktioner. En
+            random-number-generator funktion, en startgame funktion og en
+            endgame funktion. Syv funktioner på mine figurer.
+          </p>
+          <p>
+            Tre funktioner for at vise startskærm og infoskærm og gå frem og
+            tilbage mellem dem.
+          </p>
+          <p>
+            Og til sidst en gameover funktion og en level complete funktion der
+            viser de repræsentative skærme og viser en try again knap der går
+            tilbage til startgame funktion.
+          </p>
+        </div>
+        <div>
+          <img src="imgs/screenshots/functions.png" alt="" width="260" />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&#169;Laura Lauring</p>
+    </footer>
+  </body>
+</html>

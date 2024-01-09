@@ -1,0 +1,97 @@
+/* Fontface */
+@font-face {
+  font-family: 'Kalam';
+  src: url(./fonts/Kalam/kalam-bold-webfont.woff2);
+}
+/* Fontface */
+
+/* Fonts */
+h1{
+  font-family: "Kalam", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+p{
+  font-family: "Kalam", sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+/* Fonts */
+
+/* Background color */
+main{
+  background-color:#9CD9BC;
+  color:  #ffffff;
+}
+/* Background color */
+
+/* Max width */
+section {
+  display: grid;
+  justify-content: center;
+}
+
+.width {
+  max-width: 1000px;
+}
+
+#section1 .width,
+#section2 .width,
+#section3 .width {
+  margin: 30px;
+}
+/* Max width */
+
+
+/* img and video size */
+main{
+  margin: 0;}
+  
+img {
+  width: 100%;
+  height: auto;
+  align-self: stretch;
+  object-fit: cover;
+}
+
+video {
+  width: 100%;
+}
+
+iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}  
+/* img and video size */
+  
+
+/* Banner*/
+.banner {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin: 0;
+}
+  
+.bannertekst {
+  font-family: "Kalam", Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-style: italic;
+}
+/* Banner*/
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #9CD9BC;
+  color:  #ffffff;
+}
+/* Footer */
+  
+  

@@ -1,0 +1,217 @@
+/* Baggrund */
+body {
+  background-image: url(/imgs/BG/paper.svg);
+}
+
+#grøncirkel {
+  position: absolute;
+  top: 34%;
+  left: -200px;
+  object-fit: cover;
+  z-index: -2;
+}
+
+#rødcirkel {
+  position: absolute;
+  top: 8%;
+  left: 65%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+#rødcirkelbund {
+  position: absolute;
+  top: 200%;
+  left: 30%;
+  height: auto;
+  object-fit: cover;
+  z-index: -2;
+}
+
+#galleriside {
+  overflow-x: hidden;
+}
+
+.span {
+  grid-column: 1/-1;
+}
+
+.midt {
+  grid-column: 2/-2;
+}
+
+/* ------------------ WEB --------------------- */
+@media screen and (min-width: 480px) {
+ /* bg */
+  #RCirkelLil{
+    display: none;
+  }
+  #RCirkelStor{
+    display: none;
+  }
+  #GCirkelLil{
+    display: none;
+  }
+  #øl{
+    display: none;
+  }
+  /* GRID layout */
+  .grid_1_8_1 {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    column-gap: 1em;
+    row-gap: 1em;
+  }
+
+  .grid_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1em;
+    row-gap: 1em;
+  }
+
+  /* Toppen */
+  #galleriSide h1 {
+    grid-column: 1/3;
+    font-size: 4.5rem;
+    position: relative;
+    top: -5%;
+    left: 10%;
+    margin-bottom: 0;
+  }
+
+  #galleriSide h2 {
+    font-family: "Typewriter";
+    font-size: 2.5rem;
+    position: relative;
+    top: -10%;
+    left: 36%;
+    margin-top: 0;
+    margin-bottom: 10%;
+  }
+
+  /* billede style */
+  .foto {
+    position: relative;
+    width: 657px;
+    height: 441px;
+  }
+
+  #toOl {
+    position: absolute;
+    width: 407px;
+    height: 432px;
+    top: 10%;
+    left: 67%;
+    z-index: 1;
+  }
+
+  /* Knap */
+  .btn {
+    background-color: #374824;
+    width: 1359px;
+    height: 65px;
+    color: #ffeece;
+    font-family: "Typewriter";
+    font-size: 20px;
+    position: relative;
+    margin-top: 2%;
+    border: none;
+    outline: none;
+  }
+}
+
+/* ---------------- MOBIL ------------------- */
+@media screen and (max-width: 480px) {
+  /* bg */
+  #grøncirkel {
+    display: none;
+  }
+
+  #rødcirkel {
+    display: none;
+  }
+
+  #rødcirkelbund {
+    display: none;
+  }
+
+  #RCirkelLil{
+    position: absolute;
+    top: 20%; 
+    left: -10%;
+    z-index: -1;
+    overflow-x: hidden;
+  }
+  #RCirkelStor{
+    position: absolute;
+    top: 387%; 
+    left: 30%;
+    z-index: -1;
+    overflow-x: hidden;
+  }
+  #GCirkelLil{
+    position: absolute;
+    top: 35%; 
+    left: 65%;
+    z-index: -1;
+    overflow-x: hidden;
+  }
+  #øl{
+    position: absolute;
+    top: 15%; 
+    left: 65%;
+    z-index: -1;
+    overflow-x: hidden;
+  }
+
+  /* Toppen */
+  #galleriSide h1 {
+    grid-column: 1/3;
+    font-size: 40px;
+    position: relative;
+    top: -20%;
+    left: 10%;
+    margin-bottom: 0;
+    max-width: 380px;
+  }
+
+  #galleriSide h2 {
+    font-family: "Typewriter";
+    font-size: 20px;
+    position: relative;
+    top: -10%;
+    left: 24%;
+    margin-top: 0;
+    margin-bottom: 15%;
+    max-width: 200px;
+  }
+
+  /* billede style */
+  .foto {
+    position: relative;
+    max-width: 100%;
+  }
+
+  #toOl {
+    display: none;
+  }
+
+    /* Knap */
+    .btn {
+      background-color: #374824;
+      width: 100%;
+      height: 35px;
+      color: #ffeece;
+      font-family: "Typewriter";
+      font-size: 15px;
+      position: relative;
+      margin-top: 2%;
+      border: none;
+      outline: none;
+      
+    }
+
+    
+}
+

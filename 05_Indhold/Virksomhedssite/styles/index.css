@@ -1,0 +1,213 @@
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#underoverskift{
+  font-family: "Bearer";
+  margin-left: 10%;
+}
+
+body{
+  background-image: url(/imgs/BG/paper.svg);
+}
+
+#grid1-1 a{
+  font-size: 1.5rem;
+  padding-top: 30%;
+}
+
+#link1{
+  padding-bottom: 10%;
+}
+
+
+#forsidetekst{
+  background-color: rgba(117, 52, 31, 0.50);
+  padding: 5%;
+  margin-top: 5%;
+}
+
+p{
+  color: #FFEFCF;
+  font-size: 1.8rem;
+ }
+
+#grøntekst{
+ color: #384825;
+ padding-top: 10%;
+ padding-bottom: 10%;
+}
+
+#forsidebtns a{
+    text-decoration: none;
+    font-family:'Typewriter';
+    background-color:#374824;
+    color: #FFEECE;
+    cursor: pointer;
+    padding-left: 50%;
+    padding-right: 50%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    align-items: center;
+    display: grid;
+    margin-top: 5%;
+  }  
+
+a{
+    font-family: "Typewriter";
+    color: #FFEECE;
+  }  
+
+/* Desktop */
+@media screen and (min-width:480px) {
+
+#forsidetekst{
+  padding-top: 14%;
+  }
+
+#mobilfugl{
+    display: none;
+  }
+
+#mobilcirkel{
+    display: none;
+  }
+
+#drikkevarer{
+    display: none;
+  }
+
+#grid1_8_1{
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+  }
+
+#grid2-1{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+#grid1-1{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+
+#forside{
+  grid-column: 2;
+}
+
+#forsideimg{
+  margin-top: 2.5%;
+  width: 696px;
+  height: 1040px;
+  align-self: stretch;
+  object-fit: cover;
+}  
+
+#grøncirkel{
+  position: absolute;
+  top: 34%;
+  left: -200px;
+  object-fit: cover;
+}
+
+#rødcirkel{
+  position: absolute;
+  top: 8%; 
+  left: 65%;
+  object-fit: cover;
+  z-index: -2;
+  pointer-events: none;
+}
+
+#rødcirkelbund{
+  position: absolute;
+  top: 163%; 
+  left: 36%;
+  height: auto;
+  object-fit: cover;
+  z-index: -1;
+}
+
+#fugl{
+  position: absolute;
+  top: -8%; 
+  left: 70%;
+  object-fit: cover;
+  pointer-events: none;
+}
+}
+/* Desktop */
+
+
+/* Mobil */
+@media screen and (max-width:480px) {
+  #forsideimg{
+      width: 100%;
+    }  
+
+  #grøncirkel{
+      display: none;
+    }
+    
+  #rødcirkel{
+      display: none;
+    }
+    
+  #rødcirkelbund{
+      display: none;
+    }
+    
+  #fugl{
+      display: none;
+    }
+
+  p{
+      color: #FFEFCF;
+      font-size: 1rem;
+     }
+
+  h2, h3{
+      color: #384825;
+      font-size: 1.3rem;
+     }
+
+  h1{
+      color: #384825;
+      font-size: 2rem;
+     }
+
+  #forsidebtns a{
+    padding-left: 40%;
+  } 
+
+  #forsidetekst{
+    margin-top: 5%;
+  }
+
+  #link1 a, #link2 a{
+    font-size: 1.2rem;
+  }
+
+  #mobilfugl{
+    position: absolute;
+    left: 65%;
+    top: 15%;
+  }
+  
+  #mobilcirkel{
+    position: absolute;
+    top: 90%; 
+    left: 65%;
+    z-index: -1;
+  }
+
+  #drikkevarer{
+    position: absolute;
+    top: 160%; 
+    left: 65%;
+  }
+    
+  }
+  /* Mobil */

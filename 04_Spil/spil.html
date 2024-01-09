@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/animationer.css" />
+    <link rel="stylesheet" href="css/elements.css" />
+    <link rel="icon" type="image/x-icon" href="imgs/favicon.png" />
+    <title>Spil</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Hjem</a></li>
+          <li><a href="spil.html">Spil</a></li>
+          <li><a href="grafik.html">Grafik</a></li>
+          <li><a href="assets.html">Assets</a></li>
+          <li><a href="teknik.html">Teknik</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="spil">
+      <div id="screen">
+        <div id="game">
+          <div id="game_background"></div>
+          <div id="game_elements">
+            <div id="turtle_container">
+              <div id="turtle_sprite"></div>
+            </div>
+            <div id="snake_container">
+              <div id="snake_sprite"></div>
+            </div>
+            <div id="spider_container">
+              <div id="spider_sprite"></div>
+            </div>
+            <div id="croc_container" class="hidden">
+              <div id="croc_sprite"></div>
+            </div>
+            <div id="crab_container" class="hidden">
+              <div id="crab_sprite"></div>
+            </div>
+          </div>
+          <div id="game_ui">
+            <div id="heart_container1">
+              <div id="heart"></div>
+            </div>
+            <div id="heart_container2"></div>
+            <div id="heart_container3"></div>
+            <div id="score_container" class="hidden">
+              <div id="score"></div>
+            </div>
+            <div id="time_container" class="hidden">
+              <div id="time_sprite"></div>
+            </div>
+          </div>
+          <div id="middelground"></div>
+          <div id="foreground"></div>
+        </div>
+        <audio src="sounds/GameMusic.mp3" id="GameMusic"></audio>
+        <div id="start">
+          <div id="startscreen">
+            <div id="start_btn" class="pulse"></div>
+            <div id="info_btn"></div>
+          </div>
+        </div>
+        <div id="info" class="hidden">
+          <div id="infoscreen">
+            <div id="exit1"></div>
+          </div>
+        </div>
+        <div id="gameover" class="hidden">
+          <div id="tryagain_btn" class="pulse"></div>
+        </div>
+        <div id="level_complete" class="hidden">
+          <div id="tryagain_btn2" class="pulse"></div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&#169;Laura Lauring</p>
+      <script src="script.js"></script>
+    </footer>
+  </body>
+</html>

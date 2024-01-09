@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="styles/kontakt.css" />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="icon" type="image/x-icon" href="/imgs/Favicon/favi-fugløl.png" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html"><img src="imgs/BG/logoV2.png" alt="" /></a>
+        </div>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">☰</label>
+        <ul class="menu">
+          <li id="hjemknap"><a href="index.html">Hjem</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="galleri.html">Galleri</a></li>
+          <li><a href="omos.html">Om os</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="grid1_8_1">
+      <div id="kontakt">
+        <div id="mobilfugl">
+          <img src="imgs/mobilSvg/Cirkelmedfugl.svg" alt="" />
+        </div>
+        <div id="mobilcirkel">
+          <img src="imgs/mobilSvg/rødcirkel200.svg" alt="" />
+        </div>
+        <div id="grøncirkel">
+          <img src="imgs/BG/CireklGrønLille.svg" alt="" />
+        </div>
+        <div id="rødcirkel"><img src="imgs/BG/CirkelRødMel.svg" alt="" /></div>
+        <div id="rødcirkelbund">
+          <img src="imgs/BG/CirkelRødStor.svg" alt="" />
+        </div>
+        <div id="fugl"><img src="imgs/BG/fuglmØl.svg" alt="" /></div>
+        <h1 id="overskrift">Cafe Fuglereden</h1>
+        <h2 id="underoverskift">Kontakt</h2>
+        <div id="kontaktboks">
+          <div>
+            <img id="kontaktimg" src="imgs/baren.webp" alt="" />
+          </div>
+          <div id="kontakttekst">
+            <p>Du er velkommen til at kontakte os på telefon eller mail.</p>
+            <p>Tlf: +45 38332026</p>
+            <p>Mail: cafefuglereden@batak.dk</p>
+          </div>
+        </div>
+        <div id="formboks">
+          <h3>Arrangementer</h3>
+          <p>
+            Der bliver fra tid til anden lavet forskellige arrangementer på Cafè
+            Fuglereden.
+          </p>
+          <p>
+            Vi holder bl.a. fodboldaften, julefrokost, receptioner, fødselsdage.
+          </p>
+          <p>
+            Se mere til vores arrangementer
+            <a href="https://www.facebook.com/cafe.fuglereden/?locale=da_DK"
+              >her.</a
+            >
+          </p>
+          <p>
+            Du er velkommen til at sende en besked om ris/ros eller ideer til
+            arrangementer nedenfor.
+          </p>
+          <div class="form-felt">
+            <div id="grid1-1">
+              <label id="fornavnlabel" for="fornavn">Navn</label>
+              <input
+                id="fornavn"
+                name="fname"
+                type="text"
+                autocomplete="given-name"
+              />
+              <label id="emaillabel" for="email">Email</label>
+              <input id="email" name="email" type="email" />
+            </div>
+            <div id="beskedboks">
+              <div>
+                <label id="beskedlabel"
+                  >Besked <textarea name="besked" rows="5"></textarea>
+                </label>
+              </div>
+              <div id="logoimg"><img src="imgs/BG/logoV2.png" alt="" /></div>
+            </div>
+            <button id="sendbutton" type="submit">Send</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      Cafe Fuglereden | CVR: 25832299 | Frederikssundsvej 70, 2400 København Nv
+      | Tlf.: 38332026 | cafefuglereden@batak.dk
+    </footer>
+  </body>
+  <script src="login.js"></script>
+</html>

@@ -1,0 +1,213 @@
+/*Font face*/
+@font-face {
+    font-family: 'Abril';
+    src: url(../Fonts/Abel/abel-regular-webfont.woff2);
+}
+
+@font-face {
+    font-family: 'Kenyan';
+    src: url(../Fonts/Kenyan/kenyc-webfont.woff2);
+}
+
+@font-face {
+    font-family: 'Copperplate';
+    src: url(../Fonts/Copperplate/copperplate_gothic_bold_regular-webfont.woff2);
+}
+
+@font-face {
+    font-family: 'Abel';
+    src: url(../Fonts/Abel/abel-regular-webfont.woff2);
+}
+
+@font-face {
+    font-family: 'Lexend';
+    src: url(../Fonts/Lexend/lexend-variablefont_wght-webfont.woff2);
+}
+/*Font face*/
+
+/*Text*/
+#forside h1{font-family:'Copperplate', Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 48px;
+    word-wrap: break-word}
+
+h1{font-family:'Copperplate', Arial, Helvetica, sans-serif;
+text-align: center;
+font-size: 35px;
+font-weight: 400;
+line-height: 48px;
+word-wrap: break-word}
+
+h2{font-family:'Copperplate', Arial, Helvetica, sans-serif;}
+
+#examples h2{font-family:'Copperplate', Arial, Helvetica, sans-serif;
+font-size: 20px;}
+
+#explore h2{font-family:'Copperplate', Arial, Helvetica, sans-serif;
+    font-size: 20px;}
+
+h3{font-family:'Lexend', Arial, Helvetica, sans-serif;
+    font-size: 12px;}
+
+p{font-family:'Abel', Arial, Helvetica, sans-serif;}
+
+/*Text*/
+
+/*Links*/
+a:link {
+    color: white;
+    text-decoration: none;
+}
+a:visited {
+    color: rgb(117, 116, 116);
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(228, 228, 228);
+    text-decoration: none;
+}
+/*Links*/
+
+/*Backgrounds*/
+#why{
+    background: linear-gradient(180deg, #FF8489 9.38%, #5DAEFF 85.42%);}
+
+#examples{
+    background: linear-gradient(180deg, #FFB37B 0%, #6DC8AC 100%);}
+
+#explore{
+    background: linear-gradient(180deg, #967DF3 9.38%, #FFAB65 85.42%);}
+
+#forside{
+    background: radial-gradient(#FFB578 0%, #FF989C 33%, #AB95FF 66%, #9BCDFF 100%);}
+/*Backgrounds*/
+
+/*Header*/
+header{
+    background-color: rgb(28, 26, 26);
+    padding: 25px;}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+   text-align: center;}
+
+@media (min-width: 400px){
+nav ul{
+margin: 0;
+padding: 0;
+list-style: none;
+display: flex;
+justify-content:space-around;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 0.1px;
+    }
+}
+/*Header*/
+
+
+/*Footer*/
+
+footer{
+    margin-top: 30px;
+    text-align: center;}
+/*Footer*/
+
+
+@media (max-width: 400px){
+    #forsidetekst2{
+        display: grid;
+        text-align: center;
+        margin-top: 10px;}
+
+    #generateButton{
+        background-color:rgb(240, 167, 175);
+        width: 239px;
+        height: 92px;
+        box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.25);
+        align-items: center;
+        font-family: 'Abel';
+        display: grid;
+        margin-top: 10px;
+        width: 150px;
+        height: 50px;
+        margin-left: 45px;
+    }
+    #randomText{
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (min-width: 400px){
+#generateButton{
+    display: grid;
+    grid-template-columns:2fr;
+    grid-column: 2;
+    grid-row: 8;
+    grid-column: 2/ 3;
+    text-align: center;
+  }
+
+  #generateButton{
+    background-color:rgb(240, 167, 175);
+    width: 239px;
+    height: 92px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.25);
+    align-items: center;
+    font-family: 'Abel';
+    font-size: 20px;
+    margin-left: 380px;}
+
+#randomText{
+    color: black;
+    display: grid;
+    grid-template-columns:2fr;
+    grid-column: 2;
+    grid-row: 9;
+    grid-column: 2/ 3;
+    text-align: center;
+    font-family: 'Abel';
+    font-size: 20px;
+  }
+
+}
+
+
+
+    #whylink1,  #whylink2{
+   background-color:rgb(240, 167, 175);
+   
+   box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.25);
+   align-items: center;
+   font-family: 'Copperplate';
+   color: black;}
+
+   @media (min-width: 400px){
+    #whylink1,  #whylink2{
+    width: 239px;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-left: 130px;}
+}
+
+@media (max-width: 400px){
+    #whylink1,  #whylink2{
+        width: 150px;
+        height: 50px;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      margin-left: 45px;
+      margin-top: 10px;}
+  }
+
+
+ 

@@ -1,0 +1,192 @@
+
+/* Forside overskrifter*/
+#overskrift{
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 30%;
+  left: 50%;
+  font-family: 'League', Arial, Helvetica, sans-serif;
+  font-size: 10em;
+  color: #f2f2f2;
+  text-shadow: 
+  -8px -8px 12px rgba(255,255,255,0.4),
+  8px 8px 12px rgba(0,0,0,0.08);
+  letter-spacing: 25px;
+
+}
+
+
+#underoverskrift{
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  font-family: 'League', Arial, Helvetica, sans-serif;
+  font-size: 6rem;
+  color: #f2f2f2;
+  text-shadow: 
+  -8px -8px 12px rgba(255,255,255,0.4),
+  8px 8px 12px rgba(0,0,0,0.08);
+
+}
+
+/* Forside overskrifter*/
+
+
+
+/*Media querie til overskrift*/
+@media (max-width: 400px){
+  #overskrift{
+    margin-top: -5%;
+    margin-left: 3%;
+    font-size: 2rem;}
+
+  #underoverskrift{
+    font-size: 1.5rem;
+    margin-top: -20%;}
+
+
+    #bg2{
+      display: block;
+      position: absolute;
+      top: 18%;
+    }
+
+    main{
+      margin: 0%;
+      }
+
+    footer{
+        margin-top: 48%;
+        padding-bottom: 20%;
+        } 
+
+    .container{
+        display: none;
+        }   
+
+    }
+/*Media querie til overskrift*/
+
+
+/* Javascript themes*/
+@media (min-width: 400px){
+  #bg2{
+  display: none;}
+
+  #bg{
+    position: absolute;
+    top: 11%;
+    max-width: 100%;
+    display: none;
+  }
+  .color-theme #bg{
+    display: block;
+  }
+}
+
+@media (max-width: 400px){
+  #bg{
+  display: none;}
+
+  #bg2{
+    display: block;}
+
+}
+
+.white-theme {
+  background-color: #f2f2f2;
+  }
+
+#forside main{
+    padding-bottom: 44%;}
+
+/* Javascript themes*/
+
+
+
+
+/*Knap*/
+.container {
+    padding: 50px;
+    position: absolute;
+    top: 55%;
+    left: 45%;
+}
+
+.knap {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.knap input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slide {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slide:before {
+  position: absolute;
+  content: "";  /*En cirkel*/
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slide {
+    background-color: #d0d0d0;
+}
+
+/*Når man trykker bevæger den sig til højre*/
+input:checked + .slide:before {
+    transform: translateX(26px);
+}
+/*Knap*/
+
+
+
+
+
+
+/* Knap/Link animation*/
+ @keyframes pulse {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    }
+    50% {
+      transform: scale(1.2);
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    }
+  }
+
+.link:hover, .linkvideo:hover, .link1:hover, .link2:hover{
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+
+/* Knap/Link animation*/
+
