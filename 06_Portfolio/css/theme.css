@@ -49,17 +49,23 @@
     #bg2{
       display: block;
       position: absolute;
-      top: 18%;
+      top: 16%;
     }
 
     main{
       margin: 0%;
       }
 
-    footer{
-        margin-top: 48%;
+    #forside footer{
+        margin-top: 45%;
+        padding-top: 20%;
         padding-bottom: 20%;
         } 
+
+     footer{
+          margin-top: 10%;
+          padding-bottom: 5%;
+          } 
 
     .container{
         display: none;
@@ -90,7 +96,8 @@
   display: none;}
 
   #bg2{
-    display: block;}
+    display: block;
+  }
 
 }
 
